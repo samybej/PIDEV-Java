@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddReclController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DARKORANGE" height="400.0" layoutY="-1.0" stroke="DARKORANGE" strokeType="INSIDE" width="600.0" />
+      <JFXDatePicker fx:id="date" defaultColor="WHITE" layoutX="341.0" layoutY="151.0" prefHeight="25.0" prefWidth="209.0" />
+      <JFXComboBox fx:id="listMessage" layoutX="50.0" layoutY="151.0" prefHeight="25.0" prefWidth="171.0" promptText="Message">
+      </JFXComboBox>
+      <JFXRadioButton fx:id="chauffeurRB" layoutX="455.0" layoutY="226.0" text="Chauffeur" textFill="#4d4d4d">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="applicationRB" layoutX="326.0" layoutY="226.0" text="Application" textFill="#4d4d4d" toggleGroup="$type" />
+      <JFXComboBox fx:id="listChauffeur" focusColor="WHITE" layoutX="50.0" layoutY="216.0" prefHeight="25.0" prefWidth="171.0" promptText="NomChauffeur" />
+      <Button fx:id="addRec" layoutX="451.0" layoutY="289.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: white;" text="Add" />
+      <Text fill="WHITE" layoutX="172.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: bold;" text="Ajouter une reclamation">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="Cancel" layoutX="341.0" layoutY="289.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: white;" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import com.lynden.gmapsfx.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutReservationTransportController">
+   <children>
+      <GoogleMapView fx:id="mapView" layoutX="485.0" layoutY="135.0" prefHeight="300.0" prefWidth="266.0" />
+      <TextField fx:id="depart" layoutX="295.0" layoutY="195.0" />
+      <Label layoutX="182.0" layoutY="199.0" prefHeight="18.0" prefWidth="96.0" text="depart" />
+      <Label layoutX="182.0" layoutY="284.0" text="Prix" />
+      <AnchorPane prefHeight="103.0" prefWidth="778.0" style="-fx-background-color: #3D4956;" styleClass="topPane">
+         <children>
+            <Label layoutX="205.0" layoutY="34.0" text="Ajouter une Reservation  :" textFill="#ffd400f0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="14.0" layoutY="15.0" onAction="#BackAction" text="Back" textFill="#ffd400">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Button layoutX="583.0" layoutY="529.0" mnemonicParsing="false" onAction="#AjoutReservation" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ffd400;" text="Reserver" />
+      <Button fx:id="VoirEtab" layoutX="485.0" layoutY="104.0" mnemonicParsing="false" onAction="#toTextFieldAction" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #ffd400;" text="voir etablissement" />
+      <TextField fx:id="arrive" layoutX="295.0" layoutY="237.0" />
+      <Label layoutX="182.0" layoutY="241.0" prefHeight="18.0" prefWidth="96.0" text="arrive" />
+      <TextField fx:id="prix" layoutX="295.0" layoutY="279.0" />
+      <TextField fx:id="distance" layoutX="295.0" layoutY="323.0" />
+      <Label layoutX="182.0" layoutY="328.0" text="Distance" />
+      <TextField fx:id="meublept" layoutX="295.0" layoutY="368.0" />
+      <Label layoutX="150.0" layoutY="373.0" text="meuble petite taille" />
+      <TextField fx:id="meublemt" layoutX="295.0" layoutY="413.0" />
+      <Label layoutX="146.0" layoutY="418.0" text="meuble moyen taille" />
+      <TextField fx:id="meublegt" layoutX="295.0" layoutY="455.0" />
+      <Label layoutX="142.0" layoutY="460.0" text="meuble grande taille" />
+   </children>
+</AnchorPane>

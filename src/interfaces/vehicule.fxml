@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.VehiculeController">
+   <children>
+      <Button layoutX="251.0" layoutY="188.0" mnemonicParsing="false" onAction="Ajout" text="insert" />
+      <TextField fx:id="textField" layoutX="178.0" layoutY="99.0" prefHeight="59.0" prefWidth="197.0" />
+      <Label fx:id="textLabel" layoutX="198.0" layoutY="244.0" prefHeight="77.0" prefWidth="144.0" text="Label">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

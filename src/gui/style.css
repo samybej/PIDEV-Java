@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 févr. 2020, 16:42:32
+    Author     : Iyadhtr
+*/
+
+.btn_taxi {-fx-background-image:url("/gui/taxi.jpg")}
+.btn_taxi:hover {-fx-background-image:url("/gui/taxi.jpg")}
+.btn_taxi:pressed {-fx-background-image:url("gui/taxi.jpg")}
+
+.btn_camion {-fx-background-image:url("/gui/camion.jpg ")}
+.btn_camion:hover {-fx-background-image:url("/gui/camion.jpg")}
+.btn_camion:pressed {-fx-background-image:url("/gui/camion.jpg")}

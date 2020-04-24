@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="777.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.frontendchauffeurController">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="121.0" prefWidth="757.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="267.0" layoutX="277.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo-bienvenue-ici-copie.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/84358473_164891808259260_5542855054416936960_n.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="29.0" prefWidth="757.0" style="-fx-background-color: #ffd400;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="568.0" prefWidth="757.0" style="-fx-background-color: #3D4956;">
+               <children>
+                  <Button fx:id="participation" layoutX="59.0" layoutY="58.0" mnemonicParsing="false" onAction="#pariciper" prefHeight="83.0" prefWidth="626.0" style="-fx-background-color: #ffd400; -fx-text-fill: black;" text="participation">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="historique" layoutX="59.0" layoutY="203.0" mnemonicParsing="false" onAction="#historique" prefHeight="83.0" prefWidth="626.0" style="-fx-background-color: #ffd400; -fx-text-fill: black;" text="Historique">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="59.0" layoutY="346.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="626.0" style="-fx-background-color: #ffd400; -fx-text-fill: black;" text="Reclamation" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="74.0" fitWidth="131.0" layoutX="602.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/unnamed.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="71.0" fitWidth="76.0" layoutX="603.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/unnamed%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="64.0" fitWidth="94.0" layoutX="610.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/unnamed%20(3).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="48.0" prefWidth="757.0" style="-fx-background-color: #ffd400;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

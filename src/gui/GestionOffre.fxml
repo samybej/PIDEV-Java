@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionOffreController">
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <JFXComboBox fx:id="box_nbrplaces" layoutX="249.0" layoutY="174.0" promptText="Places disponibles" unFocusColor="#ffd400" />
+            <JFXTextField fx:id="depart" layoutX="271.0" layoutY="22.0" unFocusColor="#ffd400" />
+            <JFXTextField fx:id="arrivee" layoutX="268.0" layoutY="69.0" unFocusColor="#ffd400" />
+            <JFXDatePicker fx:id="date_offre" defaultColor="#ffd000" layoutX="179.0" layoutY="119.0" />
+            <JFXTextField fx:id="tarif" layoutX="244.0" layoutY="214.0" unFocusColor="#ffd400" />
+            <Label layoutX="154.0" layoutY="25.0" text="Point de depart" textFill="#3d4956">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="71.0" text="Point d'arrivee" textFill="#3d4956">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="121.0" text="Date de depart" textFill="#3d4956">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="221.0" text="Tarif" textFill="#3d4956">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTimePicker fx:id="time_offre" defaultColor="#ffd400" layoutX="350.0" layoutY="119.0" />
+            <JFXComboBox fx:id="col_bagage" layoutX="284.0" layoutY="316.0" unFocusColor="#ffd400" />
+            <JFXTextField fx:id="col_vehicule" layoutX="244.0" layoutY="268.0" unFocusColor="#ffd400" />
+            <Label layoutX="178.0" layoutY="270.0" text="Vehicule" textFill="#3d4956">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="318.0" text="Bagage" textFill="#3d4956">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="ControleDepart" layoutX="424.0" layoutY="35.0" />
+            <Label fx:id="ControleArrivee" layoutX="424.0" layoutY="86.0" />
+            <Label fx:id="ControleDate" layoutX="422.0" layoutY="191.0" />
+            <Label fx:id="ControleTarif" layoutX="410.0" layoutY="231.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#ffd400" layoutX="147.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Offre" wrappingWidth="305.13671875">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="annuler" layoutX="14.0" layoutY="14.0" onAction="#goBack" prefHeight="30.0" prefWidth="56.0" style="-fx-background-color: #ffd400;" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="Ajouter" layoutX="220.0" layoutY="-1.0" onAction="#AjouterOffre" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: #ffd400;" text="Ajouter mon Offre">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

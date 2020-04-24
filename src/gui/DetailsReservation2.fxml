@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="625.0" prefWidth="1266.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DetailsReservationController">
+   <center>
+      <BorderPane>
+         <top>
+            <BorderPane BorderPane.alignment="CENTER">
+               <bottom>
+                  <TableView fx:id="tableviewvehicule" prefHeight="129.0" prefWidth="1266.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="col_immatriculation" prefWidth="173.0" text="immatriculation" />
+                        <TableColumn fx:id="col_numeroassurance" prefWidth="173.0" text="numero_assurance" />
+                        <TableColumn fx:id="col_marque" prefWidth="173.0" text="marque" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </bottom>
+               <center>
+                  <Label text="Vehicule" textFill="#ffac05" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </top>
+         <center>
+            <BorderPane prefWidth="1266.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Label text="Chauffeur" textFill="#ffac05" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+               </top>
+               <center>
+                  <TableView fx:id="tableviewchauffeur" prefHeight="117.0" prefWidth="1266.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="col_cin" prefWidth="158.0" text="cin" />
+                        <TableColumn fx:id="col_nom" prefWidth="158.0" text="nom" />
+                        <TableColumn fx:id="col_prenom" prefWidth="158.0" text="prenom" />
+                        <TableColumn fx:id="col_tel" prefWidth="158.0" text="tel" />
+                        <TableColumn fx:id="col_sexe" prefWidth="87.0" text="sexe" />
+                        <TableColumn fx:id="col_salaire" prefWidth="103.0" text="salaire" />
+                        <TableColumn fx:id="col_note" prefWidth="112.0" text="note" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="96.0" prefWidth="1266.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="81.0" prefWidth="1266.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </center>
+   <top>
+      <BorderPane prefWidth="1266.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="101.0" prefWidth="1266.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="460.0" layoutY="35.0" text="Details de la réservation :" textFill="#ffd400">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#BackAction" ripplerFill="#ff9900" text="Back" textFill="#ffd400">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </top>
+   <bottom>
+   </bottom>
+</BorderPane>

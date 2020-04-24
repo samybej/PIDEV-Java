@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="745.0" prefWidth="1041.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MotDePasseOublierController">
+   <children>
+      <AnchorPane layoutX="243.0" prefHeight="762.0" prefWidth="515.0" styleClass="box-login">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="271.0" layoutX="128.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" styleClass="login-img" />
+            <Label layoutX="235.0" layoutY="2.0" styleClass="login-txt" text="Connexion" textFill="WHITE" />
+            <JFXPasswordField fx:id="pwd2" layoutX="156.0" layoutY="227.0" prefHeight="25.0" prefWidth="253.0" promptText="Confirmer votre mot de passe" />
+            <Label fx:id="LMdp1" layoutX="442.0" layoutY="187.0" />
+            <Label fx:id="LMdp2" layoutX="442.0" layoutY="258.0" />
+            
+            <JFXButton fx:id="idUpdateMdp" layoutX="176.0" layoutY="567.0" onAction="#UpdateMdp" prefHeight="47.0" prefWidth="135.0" stylesheets="@CSS/dark-theme.css" text="Confirmer" />
+            <JFXPasswordField fx:id="pwd1" layoutX="156.0" layoutY="161.0" prefHeight="25.0" prefWidth="253.0" promptText="Nouveau mot de passe" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

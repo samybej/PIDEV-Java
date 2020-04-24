@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginPageController">
+   <center>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="441.0" prefWidth="453.0" style="-fx-background-color: FAFAFA;">
+         <children>
+            <Pane layoutX="137.0" layoutY="61.0" prefHeight="286.0" prefWidth="226.0">
+               <children>
+                  <JFXTextField fx:id="idLogin" focusColor="#ffd400" layoutX="33.0" layoutY="47.0" promptText="Login" />
+                  <JFXTextField fx:id="idMdp" focusColor="#ffd400" layoutX="33.0" layoutY="100.0" promptText="Mot de passe" />
+                  <Label layoutX="79.0" layoutY="150.0" onMouseClicked="#MdpOub" text="Forget password" textFill="#ffd400">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblErreur" layoutX="33.0" layoutY="133.0" />
+                  <Label layoutX="9.0" layoutY="238.0" onMouseClicked="#pageInscr" text="Pas encore inscrit? Inscrivez-vous!" textFill="#ffd400">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSignin" layoutX="23.0" layoutY="191.0" mnemonicParsing="false" onAction="#seConnecter" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: ffd400;" text="Se connecter" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="login" layoutX="423.0" layoutY="204.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <BorderPane style="-fx-border-color: #ffd400;" BorderPane.alignment="CENTER">
+         <center>
+            <Text fill="#ffd400" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver">
+               <font>
+                  <Font size="73.0" />
+               </font>
+            </Text>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="67.0" prefWidth="647.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSignin11" mnemonicParsing="false" onAction="#seConnecterChauffeur" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: ffd400;" text="Interface Chauffeur" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSignin1" layoutX="488.0" mnemonicParsing="false" onAction="#seConnecterAdmin" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: ffd400;" text="Interface Admin" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="441.0" prefWidth="72.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="441.0" prefWidth="76.0" style="-fx-background-color: #3D4956;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
